@@ -1,0 +1,32 @@
+{
+  "name": "node-koa-starter",
+  "version": "0.0.1",
+  "description": "Boilerplate for new koa.js projects",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "NODE_ENV=test mocha --recursive test",
+    "dev": "nodemon --ignore test --ignore public bin/node-koa-starter",
+    "lint": "eslint --ignore-pattern node_modules --ignore-pattern public/js --ignore-pattern assets ."
+  },
+  "author": "Daniel",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.0.1",
+    "koa-response-time": "^2.0.0",
+    "koa-router": "^7.4.0",
+    "nodemon": "^2.0.0",
+    "telegraf": "^3.33.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "mocha": "^6.2.2",
+    "supertest": "^3.0.0"
+  }
+}
